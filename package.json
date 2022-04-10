@@ -11,6 +11,10 @@
     "axios": "^0.26.1",
     "cesium": "^1.92.0",
     "element-plus": "^2.1.8",
+    "leaflet": "^1.7.1",
+    "leaflet.chinatmsproviders": "^3.0.4",
+    "leaflet.markercluster": "^1.5.3",
+    "leaflet.pm": "^2.2.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2"

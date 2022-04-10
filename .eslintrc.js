@@ -1,16 +1,17 @@
 module.exports = {
-    parser: 'vue-eslint-parser',
-    env: {
-        browser: true,
-        node: true,
-        es2021: true
-    },
-    extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
-    parserOptions: {
-        ecmaVaersion: 12,
-        sourceType: 'module'
-    },
-    rules: {
-        'prettier/prettier': 'error'
-    }
+  parser: 'vue-eslint-parser',
+  env: {
+    browser: true,
+    node: true,
+    es2021: true
+  },
+  extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
+  parserOptions: {
+    ecmaVaersion: 12,
+    sourceType: 'module'
+  },
+  rules: {
+    'prettier/prettier': 'error',
+    'vue/multi-word-component-names': 'off'
+  }
 }
