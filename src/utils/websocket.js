@@ -143,11 +143,11 @@ socket.prototype.$socket_subscribe = function () {
   const self = this
   self.ws.onmessage = function (res) {
     if (self.actions) {
-      if (isType(self.actions) !== 'Function') {
-        throw new Error('actions')
-      } else {
-        self.commit(...self.actions(res.data))
-      }
+      // if (isType(self.actions) !== 'Function') {
+      //   throw new Error('actions')
+      // } else {
+      self.commit(self.actions, res.data)
+      // }
     } else {
       self.commit(res.data)
     }
