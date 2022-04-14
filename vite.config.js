@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import cesium from 'vite-plugin-cesium'
-import {resolve} from 'path'
+import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), cesium()],
@@ -9,12 +9,12 @@ export default defineConfig({
     preprocessorOptions: {
       additionalData: `@import "src/assets/styles/index.scss"`
     }
-  }, 
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      'components': resolve(__dirname, './src/components')
+      components: resolve(__dirname, './src/components'),
+      api: resolve(__dirname, './src/api')
     }
   }
-  
 })

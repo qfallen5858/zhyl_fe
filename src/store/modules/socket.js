@@ -1,5 +1,5 @@
 import Socket from '../../utils/websocket'
-import SocketAction from '../../utils/socketAction'
+// import SocketAction from '../../utils/socketAction'
 export default {
   namespaced: true,
   state() {
