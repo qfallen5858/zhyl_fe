@@ -6,8 +6,8 @@ const login = () => import('../components/login/login.vue')
 const routes = [
   {
     path: '/',
-    component: map,
-    name: 'map'
+    component: lmap,
+    name: `default`
   },
   {
     path: '/login',
@@ -18,6 +18,11 @@ const routes = [
     path: '/lmap',
     component: lmap,
     name: 'lmap'
+  },
+  {
+    path: '/',
+    component: map,
+    name: 'map'
   }
 ]
 
